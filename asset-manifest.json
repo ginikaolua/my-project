@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/my-project/static/css/main.c76016a4.css",
+    "main.js": "/my-project/static/js/main.c27360ec.js",
+    "static/media/House7.jpg": "/my-project/static/media/House7.cc8d5038c8c9ad10ecc0.jpg",
+    "static/media/House4.jpg": "/my-project/static/media/House4.63b248ad09aafd2036a2.jpg",
+    "static/media/house11.jpg": "/my-project/static/media/house11.36a46d10e2776426316f.jpg",
+    "static/media/House5.jpg": "/my-project/static/media/House5.40fea3d765c8a260367a.jpg",
+    "static/media/House6.jpg": "/my-project/static/media/House6.8060cd4271aedaf089a1.jpg",
+    "static/media/House2.jpg": "/my-project/static/media/House2.a3ea4a6ccb95af44bd8e.jpg",
+    "static/media/House9.jpg": "/my-project/static/media/House9.cb20963c1517277cf85e.jpg",
+    "static/media/House10.jpg": "/my-project/static/media/House10.b156bdd742412a0a4a49.jpg",
+    "static/media/House8.jpg": "/my-project/static/media/House8.309af511116035f843a4.jpg",
+    "static/media/house12.jpg": "/my-project/static/media/house12.4190ef42808cd3f8e975.jpg",
+    "index.html": "/my-project/index.html",
+    "main.c76016a4.css.map": "/my-project/static/css/main.c76016a4.css.map",
+    "main.c27360ec.js.map": "/my-project/static/js/main.c27360ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c76016a4.css",
+    "static/js/main.c27360ec.js"
+  ]
+}
