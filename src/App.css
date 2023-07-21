@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
+.item{
+  min-height: 30rem;
+  min-width: 30rem;
+  padding: 40px;
+
+
+}
+
+.item img{
+  width:100%;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
   pointer-events: none;
+  box-shadow: 15px 15px 8px rgb(129, 126, 126);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innerCarousel{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.carousel{
+  cursor: grab;
+  overflow: hidden;
+  background:#ece1e1;
+
+}
+.carahead{
+  padding: 3rem 3rem;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  padding-top: 7rem;
+}
+.carahead::after{
+  content: "";
+  width: 280px;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #B48E92;
+}
+.carah4{
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+.aboutheading{
+  width:90%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px auto;
+  padding-top: 7rem;
+
+}
+.aboutheading h1{
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  position: relative;
+}
+.aboutheading h1::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: #B48E92;
+}
+.aboutheading p{
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+.aboutcontainer{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.aboutabout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutimage{
+  flex: 1;
+  margin-right: 40px;
+  overflow: hidden;
+
+}
+.aboutimage img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.5s ease;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.aboutimage:hover img{
+  transform: scale(1.2);
+}
+.aboutcontent{
+  flex: 1;
+}
+.aboutcontent h2{
+  font-size: 23px;
+  margin-bottom: 1rem;
+}
+.aboutcontent p{
+  font-size: 18px;
+  line-height: 1.5;
+}
+.aboutcontent .readmore{
+  display: inline-block;
+  font-size: 19px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color:#B48E92;
+  border-radius: 25px;
+  margin-top: 15px;
+  transition: 0.3 ease;
+  color: #f5f1ed;
+  box-shadow: 5px 5px 10px rgb(129, 126, 126);
+
+}
+.aboutcontent .readmore:hover{
+  background-color: #000 ;
+  box-shadow: none;
+  transition: 0.3 ease;
+}
+@media screen and (max-width: 820px){
+  .aboutheading{
+    padding: 0px 20px;
+    padding-top: 7rem;
+
+  }
+  .aboutheading h1{
+    font-size: 36px;
+  }
+  .aboutheading p{
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  .aboutcontainer{
+    padding: 0;
+
+  }
+  .aboutabout{
+    padding: 20px;
+    flex-direction: column;
+  }
+  .aboutimage{
+    margin-right: 0px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .aboutcontent p{
+    padding: 0px;
+    font-size: 20px;
+  }
+  .aboutcontent .readmore{
+   justify-content: center;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import More from './components/More';
+import Hero from './components/Hero';
+import Infosection from './components/Infosection';
+import Navbar from './components/Navbar';
+import { InfoData } from './data/InfoData';
+import { InfoDataTwo } from './data/InfoData';
+import { SliderData } from './data/SliderData';
+import Projects from './pages/Projects';
+import Contact from './components/Contact'
+import Foooter from './Foooter';
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />     
+      <Hero slides={SliderData} />
+      <Infosection {...InfoData}/>
+      <More/>
+      <Infosection {...InfoDataTwo}/>
+      <Projects slides={SliderData}/>
+      <Contact />
+      <Foooter/>
+    </>
   );
 }
 
